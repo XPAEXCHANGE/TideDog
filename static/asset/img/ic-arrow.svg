@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M-171-10H9v40h-180z"/>
+        <text fill="#4A4A4A" font-family="PingFangTC-Regular, PingFang TC" font-size="16" transform="translate(-171 -10)">
+            <tspan x="16" y="25">0xc801ad718521f6...</tspan>
+        </text>
+        <path fill="#D8D8D8" d="M-171 29H9v1h-180z"/>
+        <g>
+            <path d="M9-10h180v40H9z"/>
+            <text fill="#4A4A4A" font-family="PingFangTC-Regular, PingFang TC" font-size="16" transform="translate(9 -10)">
+                <tspan x="16" y="25">0xc801ad718521f6...</tspan>
+            </text>
+            <path fill="#D8D8D8" d="M9 29h180v1H9z"/>
+        </g>
+        <g fill="#15D5C0" fill-rule="nonzero">
+            <path d="M0 9h12.2l-5.6 5.6L8 16l8-8-8-8-1.4 1.4L12.2 7H0z"/>
+        </g>
+    </g>
+</svg>

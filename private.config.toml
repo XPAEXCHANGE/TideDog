@@ -1,0 +1,28 @@
+# BlockScanner Default Config
+
+title = "BlockScanner"
+
+[base]
+folder = "chaindata"
+debug = true
+
+[blockchain]
+protocol = "https:"
+hostname = "betarpc.xpa.exchange"
+port = 443
+path = "/"
+
+[database]
+#protocol = "mongodb:"
+#hostname = "54.255.246.75"
+#port = 27017
+#db = "bart"
+#prefix = "BS2_"
+#user = "bartteam"
+#password = "2wsx4rfv6yhn"
+
+[api]
+pathname = [
+  "get | /,/version | Static.Utils.readPackageInfo | auth | hashcash",
+  "post | / | Bot.BlockScanner.jsonrpc | auth"
+]
