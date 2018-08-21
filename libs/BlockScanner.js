@@ -17,7 +17,6 @@ class BlockScanner extends Bot {
     this.only = this.config.argv.only || -1;
     this.freezeIndex = this.only > -1;
     return super.start()
-    .then(() => this.scan())
     .catch(this.logger.trace)
     .then(() => this);
   }

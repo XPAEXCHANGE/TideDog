@@ -123,7 +123,7 @@ class Receptor extends Bot {
         this.listenHttp({ port: newPort, options, callback });
       });
       serverHTTP.listen(port, () => {
-        this.logger.log('\x1b[1m\x1b[32mHTTP \x1b[0m\x1b[21m ', port);
+        this.logger.log('\x1b[1m\x1b[32mHTTP \x1b[0m\x1b[21m ', `http://127.0.0.1:${port}`);
       });
     });
   }
@@ -138,7 +138,7 @@ class Receptor extends Bot {
       this.listenHttps({ port: newPort, options, callback });
     });
     serverHTTPS.listen(port, () => {
-      this.logger.log('\x1b[1m\x1b[32mHTTPS\x1b[0m\x1b[21m ', port);
+      this.logger.log('\x1b[1m\x1b[32mHTTPS\x1b[0m\x1b[21m ', `http://127.0.0.1:${port}`);
     });
   }
 
