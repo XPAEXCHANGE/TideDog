@@ -396,8 +396,8 @@ class Utils {
         const isFile = stats && stats instanceof fs.Stats && stats.isFile();
         const isDirectory = stats && stats instanceof fs.Stats && stats.isDirectory();
         if(isDirectory) {
-          const htmFilePath = filePath + 'index.htm';
-          const htmlFilePath = filePath + 'index.html';
+          const htmFilePath = path.resolve(filePath, 'index.htm');
+          const htmlFilePath = path.resolve(filePath, 'index.html');
           return Promise.all([
             this.fileExists({ filePath: htmFilePath }),
             this.fileExists({ filePath: htmlFilePath })

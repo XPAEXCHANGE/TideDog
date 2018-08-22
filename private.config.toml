@@ -23,6 +23,6 @@ path = "/"
 
 [api]
 pathname = [
-  "get | /,/version | Static.Utils.readPackageInfo | auth | hashcash",
+  "get | /version | Static.Utils.readPackageInfo | auth | hashcash",
   "post | / | Bot.BlockScanner.jsonrpc | auth"
 ]
