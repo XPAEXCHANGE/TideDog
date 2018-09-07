@@ -1,6 +1,5 @@
+const path = require('path');
 const Ganache = require("ganache-core");
-//const server = Ganache.server();
-//server.listen(port, function(err, blockchain) {...});
 
 const Bot = require(path.resolve(__dirname, 'Bot.js'));
 const Utils = require(path.resolve(__dirname, 'Utils.js'));
