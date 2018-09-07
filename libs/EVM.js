@@ -34,7 +34,7 @@ class Receptor extends Bot {
         const newPort = defaultHTTP.length > 0 ? defaultHTTP.pop() : port + 1;
         this.listenHttp({ port: newPort }).then(resolve, reject);
       });
-      serverHTTP.listen(port, (err, blockchain) => {
+      this.server.listen(port, (err, blockchain) => {
         if(err) {
           reject(err);
         } else {
