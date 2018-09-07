@@ -1,0 +1,36 @@
+<html>
+
+<head>
+</head>
+
+<body>
+
+<script>
+const ecalert = (content) => {
+  let container;
+  const items = document.getElementById('tidewallet-connect-debug');
+  const body = document.getElementsByTagName('body').item(0);
+  const msg = document.createElement('li');
+  const close = document.createElement('a');
+  close.onclick = () => { msg.remove(); }
+  close.append('x');
+  close.style = 'position: absolute; right: 0px; top: 0px; padding: 0px 5px; height: 100%; line-height: 100%; cursor: pointer; background: #abd; border-top-right-radius: 5px; border-bottom-right-radius: 5px;';
+  msg.style = 'display: block; width: 300px; padding: 10px; background: #cdf; border-radius: 5px; position: relative; color: #666; margin: 1px';
+  msg.append(content);
+  msg.append(close);
+  if(!!items) {
+    container = items;
+  } else {
+    container = document.createElement('ul');
+    container.id = 'tidewallet-connect-debug';
+    container.style = 'position: fixed; top: 0px; margin: auto;';
+    body.append(container);
+  }
+  container.append(msg);
+}
+
+ecalert('Yo!');
+</script>
+</body>
+
+</html>
