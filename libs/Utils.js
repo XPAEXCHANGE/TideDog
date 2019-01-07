@@ -74,10 +74,10 @@ class Utils {
   static toToml(data, notRoot) {
     let result;
 
-    if(data instanceof Object) {
+    if(data instanceof Object || typeof data == 'object') {
       result = Object.keys(data)
       .map((v) => {
-      if(data[v] instanceof Object) {
+      if(data[v] instanceof Object || typeof data[v] == 'object') {
         return `[${v}]\r\n${this.toToml(data[v], true)}\r\n` ;
       } else if (typeof(data[v]) == 'string') {
           return `${v} = "${data[v]}"${!notRoot ? '\r\n' : ''}`;
